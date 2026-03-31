@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Habits from '../Habits';
+import Habits from '../../pages/Habits';
 import { AppProvider } from '../../context/AppContext';
 
 test('renders Habits without crashing', () => {

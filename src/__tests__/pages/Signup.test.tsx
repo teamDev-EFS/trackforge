@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Signup from '../Signup';
+import Signup from '../../pages/Signup';
 import { AppProvider } from '../../context/AppContext';
 
 test('renders Signup without crashing', () => {
@@ -14,7 +14,7 @@ test('renders Signup without crashing', () => {
 });
 
 test('submits signup form', () => {
-  const { getByLabelText, getByText } = render(
+  const { getByLabelText, getByRole } = render(
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <AppProvider>
         <Signup />
@@ -23,7 +23,7 @@ test('submits signup form', () => {
   );
   fireEvent.change(getByLabelText(/name/i), { target: { value: 'Sarah Mitchell' } });
   fireEvent.change(getByLabelText(/email/i), { target: { value: 'sarah.mitchell@example.com' } });
-  fireEvent.change(getByLabelText(/password/i), { target: { value: 'password123' } });
+  fireEvent.change(getByLabelText(/^password$/i), { target: { value: 'password123' } });
   fireEvent.change(getByLabelText(/confirm password/i), { target: { value: 'password123' } });
-  fireEvent.click(getByText(/sign up/i));
+  fireEvent.click(getByRole('button', { name: /^sign up$/i }));
 });

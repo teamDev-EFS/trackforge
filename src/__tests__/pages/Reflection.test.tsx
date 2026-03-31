@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Reflection from '../Reflection';
+import Reflection from '../../pages/Reflection';
 import { AppProvider } from '../../context/AppContext';
 
 test('renders Reflection without crashing', () => {

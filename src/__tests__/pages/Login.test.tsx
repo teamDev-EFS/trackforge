@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Login from '../Login';
+import Login from '../../pages/Login';
 import { AppProvider } from '../../context/AppContext';
 
 test('renders Login without crashing', () => {
@@ -14,7 +14,7 @@ test('renders Login without crashing', () => {
 });
 
 test('submits login form', () => {
-  const { getByLabelText, getByText } = render(
+  const { getByLabelText, getByRole } = render(
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <AppProvider>
         <Login />
@@ -23,5 +23,5 @@ test('submits login form', () => {
   );
   fireEvent.change(getByLabelText(/email/i), { target: { value: 'sarah.mitchell@example.com' } });
   fireEvent.change(getByLabelText(/password/i), { target: { value: 'password123' } });
-  fireEvent.click(getByText(/login/i));
+  fireEvent.click(getByRole('button', { name: /^login$/i }));
 });

@@ -1,4 +1,4 @@
-import { formatDate, formatCurrency, validateEmail, validatePassword } from '../utils/helpers';
+import { formatDate, formatCurrency, validateEmail, validatePassword } from '../../utils/helpers';
 
 test('formatDate formats date correctly', () => {
   expect(formatDate('2024-06-14')).toBe('Jun 14, 2024');

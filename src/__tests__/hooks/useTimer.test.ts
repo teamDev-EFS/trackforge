@@ -1,13 +1,13 @@
-import { renderHook, act } from '@testing-library/react-hooks';
-import { useTimer } from '../hooks/useTimer';
+import { renderHook, act } from "@testing-library/react";
+import { useTimer } from "../../hooks/useTimer";
 
-test('should initialize timer', () => {
+test("should initialize timer", () => {
   const { result } = renderHook(() => useTimer(60));
   expect(result.current.seconds).toBe(60);
   expect(result.current.isActive).toBe(false);
 });
 
-test('should start timer', () => {
+test("should start timer", () => {
   const { result } = renderHook(() => useTimer(60));
   act(() => {
     result.current.start();
@@ -15,7 +15,7 @@ test('should start timer', () => {
   expect(result.current.isActive).toBe(true);
 });
 
-test('should pause timer', () => {
+test("should pause timer", () => {
   const { result } = renderHook(() => useTimer(60));
   act(() => {
     result.current.start();

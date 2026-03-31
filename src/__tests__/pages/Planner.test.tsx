@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Planner from '../Planner';
+import Planner from '../../pages/Planner';
 import { AppProvider } from '../../context/AppContext';
 
 test('renders Planner without crashing', () => {

@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { AppProvider } from '../context/AppContext';
+import { AppProvider } from '../../context/AppContext';
 
 test('renders AppProvider without crashing', () => {
   render(

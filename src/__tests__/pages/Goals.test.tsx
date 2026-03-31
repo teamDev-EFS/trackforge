@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import Goals from '../Goals';
+import Goals from '../../pages/Goals';
 import { AppProvider } from '../../context/AppContext';
 
 test('renders Goals without crashing', () => {
