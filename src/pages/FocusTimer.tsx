@@ -1,0 +1,1 @@
+import PomodoroTimer from '../components/timer/PomodoroTimer';export default function FocusTimer() {return (<div className="animate-fadeIn"><h1 className="text-4xl font-bold tracking-tight mb-6">Focus Timer</h1><PomodoroTimer /></div>);} 

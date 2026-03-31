@@ -1,0 +1,1 @@
+import type { AnalyticsData } from '../types';export const analyticsData: AnalyticsData[]=[{week:'2024-W21',tasksCompleted:35,habitsCompleted:28,focusScore:78},{week:'2024-W22',tasksCompleted:40,habitsCompleted:30,focusScore:85},{week:'2024-W23',tasksCompleted:38,habitsCompleted:32,focusScore:82}];

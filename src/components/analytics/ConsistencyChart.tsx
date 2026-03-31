@@ -1,0 +1,1 @@
+import Card from '../ui/Card';export default function ConsistencyChart() {return (<Card className="cursor-default"><h3 className="text-lg font-semibold mb-4">Consistency Chart</h3><p className="text-text-secondary text-sm">Consistency chart visualization coming soon.</p></Card>);} 

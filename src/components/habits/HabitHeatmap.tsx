@@ -1,0 +1,1 @@
+import Card from '../ui/Card';export default function HabitHeatmap() {return (<Card className="cursor-default"><h3 className="text-lg font-semibold mb-4">Habit Heatmap</h3><p className="text-text-secondary text-sm">Heatmap visualization coming soon.</p></Card>);} 

@@ -1,0 +1,1 @@
+import type { User } from '../types';export const currentUser: User={id:'u1',name:'Sarah Mitchell',email:'sarah.mitchell@example.com',avatar:'https://i.pravatar.cc/150?img=12',role:'student'};
