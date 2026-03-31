@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@testing-library/react": "^13.0.0",
+    "vitest": "^0.0.0"
+  },
+  "dependencies": {
+    "@testing-library/react-hooks": "latest",
+    "@vitejs/plugin-react": "latest"
+  }
+}

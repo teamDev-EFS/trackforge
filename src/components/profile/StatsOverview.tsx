@@ -1,0 +1,1 @@
+import Card from '../ui/Card';export default function StatsOverview() {return (<Card className="cursor-default"><h3 className="text-lg font-semibold mb-4">Stats Overview</h3><p className="text-text-secondary text-sm">You have completed 45 tasks this week and maintained a 7-day habit streak.</p></Card>);} 

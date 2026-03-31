@@ -1,0 +1,1 @@
+import Card from '../ui/Card';export default function InsightCard() {return (<Card className="cursor-default"><h3 className="text-lg font-semibold mb-2">Insights</h3><ul className="list-disc list-inside text-sm text-text-secondary space-y-1"><li>You are 20% more consistent this week</li><li>Best performance day: Wednesday</li><li>Keep up the great work!</li></ul></Card>);} 

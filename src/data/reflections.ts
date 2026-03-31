@@ -1,0 +1,1 @@
+import type { Reflection } from '../types';export const reflections: Reflection[]=[{id:'r1',date:'2024-06-14',mood:'happy',notes:'Completed most tasks and felt productive.'},{id:'r2',date:'2024-06-13',mood:'neutral',notes:'Could improve focus during study sessions.'},{id:'r3',date:'2024-06-12',mood:'sad',notes:'Missed workout and procrastinated on assignments.'}];

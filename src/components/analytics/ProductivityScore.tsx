@@ -1,0 +1,1 @@
+import Card from '../ui/Card';export default function ProductivityScore() {return (<Card className="cursor-default"><h3 className="text-lg font-semibold mb-4">Productivity Score</h3><p className="text-text-secondary text-sm">Your current productivity score is 82%. Keep up the good work!</p></Card>);} 
